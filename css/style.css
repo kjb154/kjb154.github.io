@@ -16,7 +16,7 @@ body {
   }
   
   /* Use the box model in a logical way */
-  .box {
+  box {
     margin: 20px;
     border: 1px solid #ddd;
     padding: 10px;
