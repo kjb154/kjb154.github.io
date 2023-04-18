@@ -38,4 +38,48 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
-
+body {
+    max-width: 960px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "masthead    masthead"
+      "navigation  welcome"
+      "copyright   copyright";
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  header,
+  footer {
+    padding: 0 20px;
+  }
+  
+  header {
+    grid-area: masthead;
+  }
+  
+  nav {
+    grid-area: navigation;
+  }
+  
+  main {
+    grid-area: welcome;
+  }
+  
+  section {
+    padding: 40px;
+  }
+  
+  footer {
+    grid-area: copyright;
+  }
+  
