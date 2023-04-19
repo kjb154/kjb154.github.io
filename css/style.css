@@ -1,6 +1,6 @@
 body {
     background-color: #ffffff;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(171, 37, 37, 0.8);
   }
   
   /* Use relative paths for linking files and pages within the site */
@@ -13,14 +13,15 @@ body {
   body {
     font-family: 'Montserrat', sans-serif, 'Arial', sans-serif;
     font-size: 16px;
+    color:rgba(0, 121, 58, 0.8)
   }
   
   /* Use the box model in a logical way */
   .box {
     margin: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(138, 37, 37);
     padding: 10px;
-  }
+  } 
   
   /* Design limits text to display no more than 60 characters */
   .container {
@@ -38,48 +39,3 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
-body {
-    max-width: 960px;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
-    grid-template-areas:
-      "masthead    masthead"
-      "navigation  welcome"
-      "copyright   copyright";
-  }
-  
-  h2 {
-    margin-top: 0;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
-  header,
-  footer {
-    padding: 0 20px;
-  }
-  
-  header {
-    grid-area: masthead;
-  }
-  
-  nav {
-    grid-area: navigation;
-  }
-  
-  main {
-    grid-area: welcome;
-  }
-  
-  section {
-    padding: 40px;
-  }
-  
-  footer {
-    grid-area: copyright;
-  }
-  
