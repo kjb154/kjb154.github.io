@@ -2,6 +2,9 @@ body {
     background-color: #ffffff;
     color: rgba(171, 37, 37, 0.8);
   }
+h1{
+    color:  color:rgba(0, 121, 75, 0.8)
+}
   
   /* Use relative paths for linking files and pages within the site */
   a {
@@ -13,7 +16,7 @@ body {
   body {
     font-family: 'Montserrat', sans-serif, 'Arial', sans-serif;
     font-size: 16px;
-    color:rgba(0, 121, 58, 0.8)
+    color:rgba(0, 121, 58, 0.8;
   }
   
   /* Use the box model in a logical way */
