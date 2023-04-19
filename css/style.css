@@ -1,3 +1,18 @@
+body{
+font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+
+  max-width: 960px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  background-color: rgba(100, 47, 57, 0.6);
+  color: rgba(171, 37, 37, 0.8);
+}
+
+
+
 body {
     background-color: #ffffff;
     color: rgba(171, 37, 37, 0.8);
