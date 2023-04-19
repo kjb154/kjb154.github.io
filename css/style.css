@@ -7,8 +7,7 @@ font-family: "Helvetica", "Arial", sans-serif;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
-  background-color: rgba(100, 47, 57, 0.6);
-  color: rgba(171, 37, 37, 0.8);
+
 }
 
 
