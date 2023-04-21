@@ -41,7 +41,7 @@ footer {
 main {
   font-family: 'Quicksand', sans-serif;
   display: grid;
-  grid-template-columns: 2fr  1fr;
+  grid-template-columns: 2fr 1fr;
   grid-gap: 20px;
   grid-template-areas:
   "geography people-and-society"
@@ -61,8 +61,8 @@ main {
 
 #econemy {
   grid-area: econemy;
-  width: 960px;
-  height:750px;
+  width: 1000px;
+  height:850px;
 }
 
 img {
