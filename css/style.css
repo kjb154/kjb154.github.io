@@ -60,6 +60,9 @@ main {
 #econemy {
   grid-area: econemy;
 }
+#fun-facts{
+  grid-area: fun-facts ;
+}
 img {
   border: 4px solid rgb(3, 0, 0);
 }
