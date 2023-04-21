@@ -1,48 +1,65 @@
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Shadows+Into+Light&display=swap');
 
 body {
-    background-color: #ffffff;
-    color: rgba(171, 37, 37, 0.8);
-  }
-h1{
-    color:  color:rgba(0, 121, 75, 0.8)
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  max-width: 960px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
 }
-  
-  /* Use relative paths for linking files and pages within the site */
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  /* Use a full, working font stack with two Google Fonts and a “web-safe” font stack */
-  body {
-    font-family: 'Montserrat', sans-serif, 'Arial', sans-serif;
-    font-size: 16px;
-    color:rgba(0, 121, 58, 0.8;
-  }
-  
-  /* Use the box model in a logical way */
-  .box {
-    margin: 20px;
-    border: 1px solid rgb(138, 37, 37);
-    padding: 10px;
-  } 
-  
-  /* Design limits text to display no more than 60 characters */
-  .container {
-    max-width: 960px;
-  }
-  
-  /* Sets styling for all link states using pseudo-classes */
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Correctly uses CSS Grid to lay out the page */
-  .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-  }
+
+h2 {
+  margin-top: 0;
+}
+
+header,
+nav,
+footer {
+  background-color: #eee;
+}
+
+section {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+section p {
+  margin-bottom: 0;
+}
+
+header,
+footer {
+  padding-left: 20px;
+  grid-column: 1 / -1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "people-and-society  people-and-society"
+    "econemy     geography";
+}
+
+#geography {
+  grid-area: geography;
+}
+
+#people-and-society {
+  grid-area: people-and-society;
+}
+
+#econemy {
+  grid-area: econemy;
+}
+img {
+  border: 1px solid #555;
+}
+
+figcaption {
+  font-family: "Shadows Into Light", "Courier New", monospace;
+  text-align: right;
+}
