@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-
 body {
-  font-family: 'Quicksand', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   max-width: 960px;
   margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header  header"
+    "nav     main"
+    "footer  footer";
   grid-gap: 20px;
 }
 
@@ -16,63 +17,56 @@ h2 {
 }
 
 header,
+nav,
 footer {
-  font-family: 'Gugi', cursive, 'Helvetica', 'Arial', sans-serif;
-  background-color: rgb(196, 248, 209);
-  border: 4px solid rgb(3, 0, 0);
+  background-color: #eee;
+}
+
+header,
+footer {
+  padding-left: 20px;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-area: main;
+  /*
+    We're declaring main as a grid area in the body's grid, but also
+    setting up main to have its own grid!
+  */
 }
 
 section {
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  background-color: rgb(246, 203, 158);
+  background-color: #ddd;
   padding: 20px;
-  border: 4px solid rgb(3, 0, 0);
-  
 }
 
 section p {
   margin-bottom: 0;
 }
 
-header,
 footer {
-  padding-left: 20px;
+  grid-area: footer;
+}
+
+#welcome {
   grid-column: 1 / -1;
 }
 
-main {
-  font-family: 'Quicksand', 'Helvetica', 'Arial', sans-serif;
-  display: grid;
-  grid-template-columns: 2fr  1fr;
-  grid-gap: 20px;
-  grid-template-areas:
-  "geography people-and-society"
-  "econemy econemy ";
+#cats {
+  grid-column: 1;
 }
 
-#geography {
-  grid-area: geography;
-  width: 300px;
-  height:750px;
-}
-
-#people-and-society {
-  grid-area: people-and-society;
-  width: 700px;
-  height:750px;
-}
-
-#econemy {
-  grid-area: econemy;
-  width: 960px;
-  height:960px;
-}
-
-img {
-  border: 4px solid rgb(3, 0, 0);
-}
-
-figcaption {
-  font-family: "Shadows Into Light", "Courier New", monospace;
-  text-align: right;
+#coming-soon {
+  grid-column: 2;
 }
